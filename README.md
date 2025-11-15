@@ -12,7 +12,7 @@ Sistema Python para análise de perfis e orientação de carreiras GS 2025. Mode
 
 ## [cite_start]📁 Estrutura de Arquivos e Classes [cite: 21]
 
-[cite_start]O sistema é modular, organizado em classes, e utiliza listas, tuplas e dicionários para a estruturação dos dados[cite: 13, 14].
+O sistema é modular, organizado em classes, e utiliza listas, tuplas e dicionários para a estruturação dos dados[cite: 13, 14].
 
 | Arquivo/Classe | Descrição | Uso de Estruturas |
 | :--- | :--- | :--- |
@@ -41,12 +41,12 @@ Certifique-se de ter o **Python 3.x** instalado em sua máquina.
     python main.py
     ```
 
-3.  [cite_start]**Utilize o Menu:** O sistema será iniciado, apresentando o menu principal[cite: 17]:
+3.  **Utilize o Menu:** O sistema será iniciado, apresentando o menu principal[cite: 17]:
     * **Opção 1:** Cadastrar e avaliar um novo perfil.
     * **Opção 2:** Buscar um perfil existente pelo RM ou Email.
     * **Opção 3:** Sair.
 
-## [cite_start]📸 Demonstração (Opcional) [cite: 22]
+## 📸 Demonstração 
 
 *(Aqui você pode adicionar prints da tela do terminal em execução ou um link para um vídeo curto no YouTube demonstrando o uso.)*
 
