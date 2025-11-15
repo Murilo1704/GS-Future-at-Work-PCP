@@ -9,15 +9,15 @@ Sistema Python para análise de perfis e orientação de carreiras GS 2025. Mode
 [cite_start]O objetivo principal é criar um sistema em **Python Orientado a Objetos (OOP)** que simule uma ferramenta inteligente de análise e orientação de carreiras. [cite: 7, 13, 15]
 
 O sistema atende a três propósitos principais:
-1.  [cite_start]**Análise de Perfil:** Coleta dados de um profissional, incluindo autoavaliações em competências técnicas (ex: Lógica de Programação, Automação) e comportamentais (ex: Criatividade, Adaptabilidade). [cite: 8]
+1.  **Análise de Perfil:** Coleta dados de um profissional, incluindo autoavaliações em competências técnicas (ex: Lógica de Programação, Automação) e comportamentais (ex: Criatividade, Adaptabilidade). [cite: 8]
 2.  **Recomendação Ponderada:** Utiliza uma lógica de **média ponderada** para calcular o grau de adequação do perfil a diferentes trilhas de carreira predefinidas.
-3.  [cite_start]**Gestão de Dados:** Atua como um sistema de recrutamento/banco de dados, permitindo o cadastro de **múltiplos perfis** e a busca por meio de um **Menu Principal (CLI)**. [cite: 17]
+3.  **Gestão de Dados:** Atua como um sistema de recrutamento/banco de dados, permitindo o cadastro de **múltiplos perfis** e a busca por meio de um **Menu Principal (CLI)**. [cite: 17]
 
-[cite_start]A proposta conecta a lógica de programação e a automação ao desenvolvimento humano e profissional, alinhando-se ao tema "Future Skills Lab". [cite: 10]
+A proposta conecta a lógica de programação e a automação ao desenvolvimento humano e profissional, alinhando-se ao tema "Future Skills Lab". [cite: 10]
 
 ## 📁 Estrutura de Arquivos, Classes e Implementação
 
-[cite_start]O projeto está organizado em módulos e classes para garantir a aplicação correta dos conceitos de Orientação a Objetos (OOP), conforme o requisito 2. O uso de **Listas, Tuplas e Dicionários** é fundamental para a modelagem dos dados (requisito 1). [cite: 13, 14, 15]
+O projeto está organizado em módulos e classes para garantir a aplicação correta dos conceitos de Orientação a Objetos (OOP), conforme o requisito 2. O uso de **Listas, Tuplas e Dicionários** é fundamental para a modelagem dos dados (requisito 1). 
 
 | Arquivo | Classe | Função Principal e Uso de Estruturas |
 | :--- | :--- | :--- |
