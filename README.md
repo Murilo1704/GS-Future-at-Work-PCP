@@ -30,6 +30,7 @@ O sistema atende a três propósitos principais:
 ## 👤 Desenvolvedores
 
 | Nome Completo | RM |
-| :--- | :--- |
-| [SEU NOME COMPLETO] | [SEU RM] |
-| [Nome do Colega (se houver)] | [RM do Colega (se houver)] |
+| Rafael Quattrer Dalla Costa - RM:562052
+GUSTAVO CORDEIRO BRAGA - RM: 562247
+MURILO JUSTINO ARCANJO - RM:565470
+
