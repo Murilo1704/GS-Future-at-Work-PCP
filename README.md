@@ -1,56 +1,31 @@
 # GS-Future-at-Work-PCP
 Sistema Python para análise de perfis e orientação de carreiras GS 2025. Modela Competências, Perfis e Carreiras usando Classes, Listas e Dicionários. O Avaliador usa média ponderada para calcular a adequação do perfil às carreiras do futuro e sugere áreas de melhoria. Interface CLI para gestão de banco de perfis (cadastro/busca).
+# 🌟 Global Solution 2025.2: Future Skills Lab - Ferramenta Inteligente de Orientação de Carreiras
 
+## 📌 Descrição do Projeto e Propósito
 
-# 🌟 Future Skills Lab - Ferramenta de Orientação de Carreiras (Global Solution 2025.2)
+[cite_start]Este projeto foi desenvolvido para a disciplina de **Pensamento Computacional e Automação com Python** (1º Ano) da FIAP, como parte da **Global Solution 2025.2 - Future at Work**. [cite: 2, 4]
 
-## [cite_start]📌 Descrição do Projeto e Propósito [cite: 19]
+[cite_start]O objetivo principal é criar um sistema em **Python Orientado a Objetos (OOP)** que simule uma ferramenta inteligente de análise e orientação de carreiras. [cite: 7, 13, 15]
 
-[cite_start]Este projeto é um sistema inteligente desenvolvido em Python, utilizando a Programação Orientada a Objetos (OOP), para simular uma ferramenta de **orientação de carreiras e análise de perfis profissionais do futuro** ("Future at Work" [cite: 2]).
+O sistema atende a três propósitos principais:
+1.  [cite_start]**Análise de Perfil:** Coleta dados de um profissional, incluindo autoavaliações em competências técnicas (ex: Lógica de Programação, Automação) e comportamentais (ex: Criatividade, Adaptabilidade). [cite: 8]
+2.  **Recomendação Ponderada:** Utiliza uma lógica de **média ponderada** para calcular o grau de adequação do perfil a diferentes trilhas de carreira predefinidas.
+3.  [cite_start]**Gestão de Dados:** Atua como um sistema de recrutamento/banco de dados, permitindo o cadastro de **múltiplos perfis** e a busca por meio de um **Menu Principal (CLI)**. [cite: 17]
 
-**Propósito:** Analisar competências técnicas e comportamentais (como Lógica, Criatividade e Adaptabilidade) e, com base em algoritmos de ponderação, gerar recomendações personalizadas de carreiras e áreas de aprimoramento. O sistema atua como um banco de dados de recrutamento, permitindo o cadastro e a busca de múltiplos candidatos.
+[cite_start]A proposta conecta a lógica de programação e a automação ao desenvolvimento humano e profissional, alinhando-se ao tema "Future Skills Lab". [cite: 10]
 
-## [cite_start]📁 Estrutura de Arquivos e Classes [cite: 21]
+## 📁 Estrutura de Arquivos, Classes e Implementação
 
-O sistema é modular, organizado em classes, e utiliza listas, tuplas e dicionários para a estruturação dos dados[cite: 13, 14].
+[cite_start]O projeto está organizado em módulos e classes para garantir a aplicação correta dos conceitos de Orientação a Objetos (OOP), conforme o requisito 2. O uso de **Listas, Tuplas e Dicionários** é fundamental para a modelagem dos dados (requisito 1). [cite: 13, 14, 15]
 
-| Arquivo/Classe | Descrição | Uso de Estruturas |
+| Arquivo | Classe | Função Principal e Uso de Estruturas |
 | :--- | :--- | :--- |
-| `main.py` | Ponto de entrada. Contém o menu principal (CLI), a lógica de I/O, a validação de email e o **BANCO_DE_PERFIS** (Lista global). | **Listas, Condicionais** |
-| `Perfil.py` | Classe que modela o candidato (nome, RM, email) e armazena suas autoavaliações de competências. | **Classes, Dicionários** |
-| `Competencia.py` | Classe base para definir uma habilidade (nome e tipo: técnica/comportamental). | **Classes** |
-| `Carreira.py` | Classe para definir uma trilha profissional, incluindo a **descrição** e o **dicionário de pesos** das competências necessárias. | **Classes, Dicionários** |
-| `Avaliador.py` | Classe responsável por todo o processamento: calcula a adequação do perfil a cada carreira (média ponderada) e gera sugestões de aprimoramento. | **Classes, Tuplas, Condicionais** |
-
-## [cite_start]🚀 Instruções de Execução [cite: 20]
-
-### Pré-requisitos
-
-Certifique-se de ter o **Python 3.x** instalado em sua máquina.
-
-### Como Rodar o Sistema
-
-1.  **Clone o Repositório:**
-    ```bash
-    git clone [SEU_LINK_DO_REPOSITORIO]
-    cd [SEU_REPOSITORIO]
-    ```
-
-2.  **Execute o Arquivo Principal:**
-    ```bash
-    python main.py
-    ```
-
-3.  **Utilize o Menu:** O sistema será iniciado, apresentando o menu principal[cite: 17]:
-    * **Opção 1:** Cadastrar e avaliar um novo perfil.
-    * **Opção 2:** Buscar um perfil existente pelo RM ou Email.
-    * **Opção 3:** Sair.
-
-## 📸 Demonstração 
-
-*(Aqui você pode adicionar prints da tela do terminal em execução ou um link para um vídeo curto no YouTube demonstrando o uso.)*
-
-[Imagem de um exemplo do CLI sendo executado]
+| `main.py` | (Controle) | **Orquestração e Interface:** Contém o loop do **Menu Principal (CLI)** e o **BANCO_DE_PERFIS** (uma **Lista** global) que armazena todos os objetos `Perfil` cadastrados. [cite_start]Também inclui a função de **validação de e-mail** rigorosa. [cite: 17, 16] |
+| `Perfil.py` | **`Perfil`** | **Modelagem do Candidato:** Armazena dados do usuário (Nome, RM, Email validado) e suas avaliações. As notas são salvas em um **Dicionário** (`self.avaliacoes`), onde a chave é o nome da competência e o valor é a nota (0-5). |
+| `Competencia.py` | **`Competencia`** | **Modelo de Habilidade:** Define as características básicas de uma competência (nome e tipo: `tecnica` ou `comportamental`). |
+| `Carreira.py` | **`Carreira`** | **Definição da Trilha:** Define uma carreira e armazena as competências-chave exigidas em um **Dicionário** (`competencias_necessarias`), onde os valores representam o **peso** daquela competência para a trilha. |
+| `Avaliador.py` | **`Avaliador`** | **Lógica e Processamento:** Contém métodos para gerar recomendações. O método principal calcula a **média ponderada** de adequação. Os resultados da análise são retornados como uma **Lista de Tuplas** `(carreira, pontuacao)`, que é então ordenada. |
 
 ## 👤 Desenvolvedores
 
